@@ -1,0 +1,313 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.space_evenly {
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(56px, 185px));
+}
+
+.grid_row2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(56px, 185px));
+    grid-gap: 1rem;
+}
+
+.box_layout {
+    border-radius: 50px;
+    background: #f2f2f2;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.checkbox_container_dimensions {
+    height: 250px;
+    width: 400px;
+}
+
+.buttonbox_container_dimensions {
+    width: 400px;
+    height: 100%;
+}
+
+.textbox_container_dimensions {
+    height: 250px;
+    width: 400px;
+}
+
+.margin_2 {
+    margin: 0rem 2rem;
+}
+
+.padding_3 {
+    padding: 1rem 4rem;
+}
+
+.text_style {
+    font-size: 32px;
+    color: #241a19;
+    margin-left: 2rem;
+    font-family: Roboto;
+}
+
+.intext_style {
+    font-size: 18px;
+    color: #241a19;
+    margin: 0px;
+    font-family: Roboto;
+}
+
+.checkbox_style {
+    /* width: 50px; */
+    /* margin: 0px;
+    padding: 0px; */
+}
+
+.radio_style {
+    /* width: 50px; */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #3ea0c1;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #3ea0c1;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    /* padding-left: 35px;
+    margin-bottom: 12px; */
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  /* .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  } */
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #3ea0c1;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* Create a custom checkbox */
+  .radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .radiomark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .radiomark {
+    background-color: #3ea0c1;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .radiomark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .radiomark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  .button_style {
+      padding: 1rem;
+      border-radius: 1rem;
+      border: 0px;
+      cursor: pointer;
+  }
+
+  .button_style.normal {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0px;
+    box-shadow:  5px 5px 10px #bebebe,
+        -5px -5px 60px #ffffff;
+  }
+
+  .button_style.focused {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #3ea0c1;
+    box-shadow:  5px 5px 10px #bebebe,
+        -5px -5px 60px #ffffff;
+    color: #3ea0c1;
+  }
+
+  .button_style.pressed {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0px;
+    box-shadow:  inset 5px 5px 10px #bebebe,
+        inset -5px -5px 60px #ffffff;
+    color: grey;
+  }
+
+  .button_style.disabled {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0px;
+    box-shadow:  inset 5px 5px 10px #bebebe,
+        inset -5px -5px 60px #ffffff;
+    color: #ffffff;
+  }
+
+  .input_style {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0px;
+    box-shadow:  inset 5px 5px 10px #bebebe,
+        inset -5px -5px 10px #ffffff;
+  }
+
+  .input_style:active {
+      border: 0px;
+  }
+
+  input:focus, select:focus, textarea:focus, button:focus {
+      outline: none;
+  }

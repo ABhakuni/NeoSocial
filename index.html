@@ -1,0 +1,92 @@
+<head>
+    <title></title>
+    <link rel="stylesheet" href="index.css" />
+    <body>
+        <div>
+            <div class="row">
+                <div class="column margin_2">
+                    <p class="text_style">Checkbox</p>
+                    <div class="box_layout checkbox_container_dimensions">
+                        <div class="grid_row space_evenly padding_3">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">
+                                <input type="radio">
+                                <span class="radiomark"></span>
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="intext_style">Inactive Checkbox</p>
+                        </div>
+                        <div class="grid_row space_evenly padding_3">
+                            <label class="container">
+                                <input type="checkbox" disabled>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">
+                                <input type="radio" disabled>
+                                <span class="radiomark"></span>
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox" disabled>
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="intext_style">Disabled Checkbox</p>
+                        </div>
+                        <div class="grid_row space_evenly padding_3">
+                            <label class="container">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">
+                                <input type="radio" checked>
+                                <span class="radiomark"></span>
+                            </label>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="intext_style">Active Checkbox</p>
+                        </div>
+                    </div>
+                    <p class="text_style">Textbox</p>
+                </div>
+                <div class="column margin_2">
+                    <p class="text_style">Button</p>
+                    <div class="box_layout buttonbox_container_dimensions">
+                        <div class="grid_row2 space_evenly padding_3">
+                            <button class="button_style normal intext_style">Click Me!</button>
+                            <p class="intext_style">Normal State</p>
+                        </div>
+                        <div class="grid_row2 space_evenly padding_3">
+                            <button class="button_style focused intext_style">Click Me!</button>
+                            <p class="intext_style">Focused State</p>
+                        </div>
+                        <div class="grid_row2 space_evenly padding_3">
+                            <button class="button_style pressed intext_style">Click Me!</button>
+                            <p class="intext_style">Pressed State</p>
+                        </div>
+                        <div class="grid_row2 space_evenly padding_3">
+                            <button class="button_style disabled intext_style" disabled>Click Me!</button>
+                            <p class="intext_style">Disabled State</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box_layout textbox_container_dimensions margin_2">
+                <div class="column padding_3">
+                    <p class="intext_style" style="margin-left: 1rem;margin-bottom: 0.5rem;">Normal State</p>
+                    <input type="text" class="input_style" placeholder="Click Me!" />
+                </div>
+                <div class="column padding_3">
+                    <p class="intext_style" style="margin-left: 1rem;margin-bottom: 0.5rem;">Focused State</p>
+                    <input type="text" class="input_style focused" placeholder="Click Me!" />
+                </div>
+            </div>
+        </div>
+    </body>
+</head>
